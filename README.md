@@ -12,6 +12,14 @@ Every script is provided as is. Read it before you run it and test it in a non-p
 |---|---|
 | [labels/Disable-LabelWatermark.ps1](labels/Disable-LabelWatermark.ps1) | Turns off the watermark on sensitivity labels, working around the "text can not be empty" error you get from Set-Label |
 
+## From the blog
+
+Each folder belongs to one post on [argusit.nl](https://www.argusit.nl/en/blog).
+
+| Date | Post | Scripts |
+|---|---|---|
+| 2025-10-07 | [Label groups replace parent labels: what changes for sensitivity labels from 1 October 2025](https://www.argusit.nl/en/blog/label-groups-replace-parent-labels) | [1](2025-10-label-groups-replace-parent-labels/) |
+
 ## Prerequisites
 
 - PowerShell 7
