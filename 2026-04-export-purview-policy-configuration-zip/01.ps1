@@ -13,10 +13,10 @@ $old = Import-Clixml -Path $OldXml
 $new = Import-Clixml -Path $NewXml
 
 function Get-Fingerprint($item) {
-    $item | Select-Object -Property * -ExcludeProperty $IgnoreProperties | ConvertTo-Json -Depth 6 -Compress
+    $item | Select-Object -Property * -ExcludeProperty $IgnoreProperties | ConvertTo-Json -Depth 10 -Compress
 }
 
-$collections = ($new | Get-Member -MemberType Properties).Name
+$collections = @(($old | Get-Member -MemberType Properties).Name) + @(($new | Get-Member -MemberType Properties).Name) | Sort-Object -Unique
 
 foreach ($collection in $collections) {
     $before = @{}; foreach ($i in @($old.$collection)) { if ($i.Name) { $before[$i.Name] = Get-Fingerprint $i } }
@@ -24,5 +24,5 @@ foreach ($collection in $collections) {
 
     foreach ($name in $after.Keys)  { if (-not $before.ContainsKey($name)) { [pscustomobject]@{ Collection = $collection; Name = $name; Change = 'Added' } } }
     foreach ($name in $before.Keys) { if (-not $after.ContainsKey($name))  { [pscustomobject]@{ Collection = $collection; Name = $name; Change = 'Removed' } } }
-    foreach ($name in $after.Keys)  { if ($before.ContainsKey($name) -and $before[$name] -ne $after[$name]) { [pscustomobject]@{ Collection = $collection; Name = $name; Change = 'Changed' } } }
+    foreach ($name in $after.Keys)  { if ($before.ContainsKey($name) -and $before[$name] -cne $after[$name]) { [pscustomobject]@{ Collection = $collection; Name = $name; Change = 'Changed' } } }
 }
