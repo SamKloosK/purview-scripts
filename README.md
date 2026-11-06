@@ -19,6 +19,7 @@ Each folder belongs to one post on [argusit.nl](https://www.argusit.nl/en/blog).
 | Date | Post | Scripts |
 |---|---|---|
 | 2025-10-07 | [Label groups replace parent labels: what changes for sensitivity labels from 1 October 2025](https://www.argusit.nl/en/blog/label-groups-replace-parent-labels) | [1](2025-10-label-groups-replace-parent-labels/) |
+| 2025-12-04 | [DLP for Microsoft 365 Copilot after Ignite: blocking labeled content versus blocking sensitive prompts](https://www.argusit.nl/en/blog/dlp-for-microsoft-365-copilot-labels-and-prompts) | [1](2025-12-dlp-for-microsoft-365-copilot-labels-and-prompts/) |
 
 ## Prerequisites
 
