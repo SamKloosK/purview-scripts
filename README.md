@@ -14,7 +14,7 @@ Every script is provided as is. Read it before you run it and test it in a non-p
 
 ## From the blog
 
-Each folder belongs to one post on [argusit.nl](https://www.argusit.nl/en/blog).
+Each folder belongs to one post on [argusit.nl](https://www.argusit.nl/en/blog). Every post is also available in Dutch on [argusit.nl/nl/blog](https://www.argusit.nl/nl/blog).
 
 | Date | Post | Scripts |
 |---|---|---|
