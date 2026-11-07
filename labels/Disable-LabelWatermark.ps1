@@ -60,7 +60,7 @@ foreach ($label in $labels) {
             Write-Host "OK     $($label.Name): watermark off" -ForegroundColor Green
         }
         catch {
-            Write-Host "ERROR  $($label.Name): $($_.Exception.Message)" -ForegroundColor Red
+            Write-Error "$($label.Name): $($_.Exception.Message)"
         }
     }
 }
