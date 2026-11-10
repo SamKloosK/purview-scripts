@@ -24,7 +24,7 @@ Each folder belongs to one post on [argusit.nl](https://www.argusit.nl/en/blog).
 | 2026-02-12 | [Extending SharePoint permissions to downloaded files: what the January client update fixes](https://www.argusit.nl/en/blog/extend-sharepoint-permissions-downloaded-files) | [1](2026-02-extend-sharepoint-permissions-downloaded-files/) |
 | 2026-04-27 | [Exporting your DLP and label policy configuration as a ZIP: useful, but not configuration as code](https://www.argusit.nl/en/blog/export-purview-policy-configuration-zip) | [1](2026-04-export-purview-policy-configuration-zip/) |
 | 2026-08-25 | [App-only authentication for eDiscovery cmdlets is unsupported: what that means for your automations](https://www.argusit.nl/en/blog/ediscovery-app-only-authentication-unsupported) | [1](2026-08-ediscovery-app-only-authentication-unsupported/) |
-| 2026-11-10 | [Purview as code: why -WhatIf deployed everything, and what else I fixed before publishing](https://www.argusit.nl/en/blog/purview-as-code-whatif) | [2](2026-11-purview-as-code-whatif/) |
+| 2026-11-10 | [Purview as code: why -WhatIf deployed everything anyway](https://www.argusit.nl/en/blog/purview-as-code-whatif) | [2](2026-11-purview-as-code-whatif/) |
 | 2026-11-23 | [Turning off a sensitivity label watermark in PowerShell: the "text can not be empty" error](https://www.argusit.nl/en/blog/turn-off-sensitivity-label-watermark-powershell) | [1](labels/Disable-LabelWatermark.ps1) |
 
 ## Prerequisites
